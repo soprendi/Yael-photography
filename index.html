@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yael Photography</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      max-width: 200px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+      background: #333;
+      color: white;
+    }
+    button {
+      background: white;
+      color: black;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      color: #66b3ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Images/logo.png" alt="Yael Logo">
+    <h1>Yael Photography</h1>
+    <p>Motorsports | Nature | Animals</p>
+  </header>
+
+  <section>
+    <h2>Featured Work</h2>
+    <div class="gallery">
+      <img src="Images/motorsports1.jpg" alt="Motorsports">
+      <img src="Images/nature1.jpg" alt="Nature">
+      <img src="Images/animals1.jpg" alt="Animals">
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="Images/1.jpg" alt="Gallery 1">
+      <img src="Images/2.jpg" alt="Gallery 2">
+      <img src="Images/3.jpg" alt="Gallery 3">
+      <img src="Images/4.jpg" alt="Gallery 4">
+      <img src="Images/5.jpg" alt="Gallery 5">
+      <img src="Images/6.jpg" alt="Gallery 6">
+      <img src="Images/7.jpg" alt="Gallery 7">
+      <img src="Images/8.jpg" alt="Gallery 8">
+      <img src="Images/9.jpg" alt="Gallery 9">
+      <img src="Images/10.jpg" alt="Gallery 10">
+      <img src="Images/11.jpg" alt="Gallery 11">
+    </div>
+  </section>
+
+  <section>
+    <h2>About Yael</h2>
+    <p>Yael is a passionate young photographer with a gift for freezing moments of speed, serenity, and soul. Whether on the race track, in the forest, or with a four-legged friend, she brings energy and emotion into every frame.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Interested in working together or commissioning a shoot? Let's connect.</p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:1rem;">Or email directly: <a href="mailto:yael100maor@gmail.com">yael100maor@gmail.com</a></p>
+  </section>
+
+  <section style="text-align:center">
+    <p>Follow Yael on Instagram: <a href="https://instagram.com/yael._.photography" target="_blank">@yael._.photography</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Yael Photography. All rights reserved.
+  </footer>
+</body>
+</html>
