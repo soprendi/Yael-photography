@@ -10,7 +10,7 @@
       color: white;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 0 1rem;
     }
     header, footer {
       text-align: center;
@@ -20,11 +20,17 @@
       max-width: 200px;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       margin-top: 0.5rem;
     }
+    h2 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+    p, input, textarea {
+      font-size: 1rem;
+    }
     section {
-      padding: 2rem 1rem;
+      padding: 2rem 0.5rem;
       max-width: 1000px;
       margin: auto;
     }
@@ -58,23 +64,35 @@
       border: none;
       border-radius: 25px;
       font-weight: bold;
+      font-size: 1rem;
       cursor: pointer;
     }
     a {
       color: #66b3ff;
       text-decoration: none;
     }
+
+    @media (max-width: 480px) {
+      header img {
+        max-width: 150px;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      section {
+        padding: 1.5rem 0.25rem;
+      }
+    }
   </style>
 </head>
 <body>
-<header>
-  <a href="index.html">
-    <img src="Images/Logo.png" alt="Yael Logo">
-  </a>
-  <h1>Yael Photography</h1>
-  <p>Motorsports | Nature | Animals</p>
-</header>
-
+  <header>
+    <a href="index.html">
+      <img src="Images/Logo.png" alt="Yael Logo">
+    </a>
+    <h1>Yael Photography</h1>
+    <p>Motorsports | Nature | Animals</p>
+  </header>
 
   <section>
     <h2>Featured Work</h2>
